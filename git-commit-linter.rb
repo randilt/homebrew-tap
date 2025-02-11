@@ -5,20 +5,20 @@
 class GitCommitLinter < Formula
   desc "A command-line tool that enforces consistent Git commit message formats"
   homepage "https://github.com/randilt/git-commit-linter"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/randilt/git-commit-linter/releases/download/v0.1.0/git-commit-linter_Darwin_x86_64.tar.gz"
-      sha256 "805f62ba216148e08398a0a7d2f556682f9b87bdec7c4414587e634809063f9d"
+      url "https://github.com/randilt/git-commit-linter/releases/download/v0.2.0/git-commit-linter_Darwin_x86_64.tar.gz"
+      sha256 "98315a37f05e7b39d96a3aa55e47ec322b1e47ec4d50895b77f508338d68995e"
 
       def install
         bin.install "git-commit-linter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/randilt/git-commit-linter/releases/download/v0.1.0/git-commit-linter_Darwin_arm64.tar.gz"
-      sha256 "07247a79d4ae3976475c3d751eb37dc0a02ab8ceb31a808e04d3be7eb3dd823c"
+      url "https://github.com/randilt/git-commit-linter/releases/download/v0.2.0/git-commit-linter_Darwin_arm64.tar.gz"
+      sha256 "8fabb190d896395480ea7ae305706c4eea53ec0523c725ab18f1c378f5b5bb8b"
 
       def install
         bin.install "git-commit-linter"
@@ -29,8 +29,8 @@ class GitCommitLinter < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/randilt/git-commit-linter/releases/download/v0.1.0/git-commit-linter_Linux_x86_64.tar.gz"
-        sha256 "dea5a5dd1a8f071c09ac2383c7c1ef515043d1ec705550158e9c1e59c175679a"
+        url "https://github.com/randilt/git-commit-linter/releases/download/v0.2.0/git-commit-linter_Linux_x86_64.tar.gz"
+        sha256 "eb541047c2f8d38d766a745f3041f4ec6356d8448454857a59d72aa7d0e4cc57"
 
         def install
           bin.install "git-commit-linter"
@@ -39,8 +39,8 @@ class GitCommitLinter < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/randilt/git-commit-linter/releases/download/v0.1.0/git-commit-linter_Linux_arm64.tar.gz"
-        sha256 "e85f782027ac6898cf8bf5bb2bb693814d2bec89870b17ec91570d853aa4efbb"
+        url "https://github.com/randilt/git-commit-linter/releases/download/v0.2.0/git-commit-linter_Linux_arm64.tar.gz"
+        sha256 "518bb7bebac814ddfc9363faf52c68559599a349201aaf69e061a6ccd9cc39b9"
 
         def install
           bin.install "git-commit-linter"
